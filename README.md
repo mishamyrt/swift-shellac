@@ -1,10 +1,14 @@
 <p align="center">
-    <img src="./Assets/logo@2x.png" width="100px" />
+    
 </p>
 
 # Shellac [![Quality Assurance](https://github.com/mishamyrt/swift-shellac/actions/workflows/qa.yaml/badge.svg)](https://github.com/mishamyrt/swift-shellac/actions/workflows/qa.yaml)
 
-A library for easily running shell commands from Swift. The library uses a custom method for determining process status and is protected against deadlocks that `waitUntilExit` can cause.
+<img align="right" src="./Assets/logo@2x.png" width="100px" />
+
+The library for easily running shell commands from Swift.
+
+Shellac uses a custom method for determining process status and is protected against deadlocks that `waitUntilExit` can cause. Also it can also limit the execution of commands by time.
 
 ## Usage
 
