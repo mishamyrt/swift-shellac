@@ -41,6 +41,12 @@ class ShellacTests: XCTestCase {
         XCTAssertFalse(homeContents.isEmpty)
     }
 
+    func testCustomShellArguments() throws {
+        let shellPath = "/bin/zsh"
+        let echo = try shell(with: "echo", arguments: ["$0"], shellPath: shellPath)
+        XCTAssertEqual(echo, shellPath)
+    }
+
     func testThrowingError() {
         do {
             try shell(with: "cd", arguments: ["notADirectory"])

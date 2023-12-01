@@ -145,8 +145,8 @@ public class ShellProcess {
 public func shell(
     with command: String,
     at path: String = ".",
-    shellPath: String = "/bin/bash",
     arguments: [String] = [],
+    shellPath: String = "/bin/bash",
     timeout: TimeInterval? = nil,
     outputHandle: FileHandle? = nil,
     errorHandle: FileHandle? = nil
